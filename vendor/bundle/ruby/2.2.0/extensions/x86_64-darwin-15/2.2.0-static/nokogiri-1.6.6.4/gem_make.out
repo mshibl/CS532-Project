@@ -1,0 +1,84 @@
+/Users/Shibl/.rbenv/versions/2.2.3/bin/ruby -r ./siteconf20160428-93069-1js2wpj.rb extconf.rb
+checking if the C compiler accepts ... yes
+checking if the C compiler accepts -Wno-error=unused-command-line-argument-hard-error-in-future... no
+Building nokogiri using packaged libraries.
+checking for gzdopen() in -lz... yes
+checking for iconv... yes
+************************************************************************
+IMPORTANT NOTICE:
+
+Building Nokogiri with a packaged version of libxml2-2.9.2
+with the following patches applied:
+	- 0001-Revert-Missing-initialization-for-the-catalog-module.patch
+	- 0002-Fix-missing-entities-after-CVE-2014-3660-fix.patch
+	- 0003-Stop-parsing-on-entities-boundaries-errors.patch
+	- 0004-Cleanup-conditional-section-error-handling.patch
+	- 0005-CVE-2015-1819-Enforce-the-reader-to-run-in-constant-.patch
+	- 0006-Another-variation-of-overflow-in-Conditional-section.patch
+	- 0007-Fix-an-error-in-previous-Conditional-section-patch.patch
+	- 0008-CVE-2015-8035-Fix-XZ-compression-support-loop.patch
+	- 0010-Fix-parsering-short-unclosed-comment-uninitialized-access.patch
+
+Team Nokogiri will keep on doing their best to provide security
+updates in a timely manner, but if this is a concern for you and want
+to use the system library instead; abort this installation process and
+reinstall nokogiri as follows:
+
+    gem install nokogiri -- --use-system-libraries
+        [--with-xml2-config=/path/to/xml2-config]
+        [--with-xslt-config=/path/to/xslt-config]
+
+If you are using Bundler, tell it to use the option:
+
+    bundle config build.nokogiri --use-system-libraries
+    bundle install
+
+Note, however, that nokogiri is not fully compatible with arbitrary
+versions of libxml2 provided by OS/package vendors.
+************************************************************************
+Extracting libxml2-2.9.2.tar.gz into tmp/x86_64-apple-darwin15.2.0/ports/libxml2/2.9.2... OK
+Running patch with /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.6.4/ports/patches/libxml2/0001-Revert-Missing-initialization-for-the-catalog-module.patch...
+Running 'patch' for libxml2 2.9.2... ERROR, review '/Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.6.4/ext/nokogiri/tmp/x86_64-apple-darwin15.2.0/ports/libxml2/2.9.2/patch.log' to see what happened.
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/Users/Shibl/.rbenv/versions/2.2.3/bin/$(RUBY_BASE_NAME)
+	--help
+	--clean
+	--use-system-libraries
+	--enable-static
+	--disable-static
+	--with-zlib-dir
+	--without-zlib-dir
+	--with-zlib-include
+	--without-zlib-include=${zlib-dir}/include
+	--with-zlib-lib
+	--without-zlib-lib=${zlib-dir}/lib
+	--enable-cross-build
+	--disable-cross-build
+/Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/mini_portile-0.6.2/lib/mini_portile.rb:279:in `block in execute': Failed to complete patch task (RuntimeError)
+	from /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/mini_portile-0.6.2/lib/mini_portile.rb:271:in `chdir'
+	from /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/mini_portile-0.6.2/lib/mini_portile.rb:271:in `execute'
+	from extconf.rb:311:in `block in patch'
+	from extconf.rb:308:in `each'
+	from extconf.rb:308:in `patch'
+	from /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/mini_portile-0.6.2/lib/mini_portile.rb:108:in `cook'
+	from extconf.rb:278:in `block in process_recipe'
+	from extconf.rb:177:in `tap'
+	from extconf.rb:177:in `process_recipe'
+	from extconf.rb:475:in `<main>'
+
+extconf failed, exit code 1
