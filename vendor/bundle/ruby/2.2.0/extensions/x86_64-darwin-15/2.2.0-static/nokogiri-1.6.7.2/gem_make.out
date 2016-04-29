@@ -1,0 +1,144 @@
+/Users/Shibl/.rbenv/versions/2.2.3/bin/ruby -r ./siteconf20160428-94036-1vu2ft3.rb extconf.rb
+checking if the C compiler accepts ... yes
+checking if the C compiler accepts -Wno-error=unused-command-line-argument-hard-error-in-future... no
+Building nokogiri using packaged libraries.
+Using mini_portile version 2.0.0
+checking for iconv.h... yes
+checking for gzdopen() in -lz... yes
+checking for iconv... yes
+************************************************************************
+IMPORTANT NOTICE:
+
+Building Nokogiri with a packaged version of libxml2-2.9.2
+with the following patches applied:
+	- 0001-Revert-Missing-initialization-for-the-catalog-module.patch
+	- 0002-Fix-missing-entities-after-CVE-2014-3660-fix.patch
+	- 0003-Stop-parsing-on-entities-boundaries-errors.patch
+	- 0004-Cleanup-conditional-section-error-handling.patch
+	- 0005-CVE-2015-1819-Enforce-the-reader-to-run-in-constant-.patch
+	- 0006-Another-variation-of-overflow-in-Conditional-section.patch
+	- 0007-Fix-an-error-in-previous-Conditional-section-patch.patch
+	- 0008-CVE-2015-8035-Fix-XZ-compression-support-loop.patch
+	- 0009-Updated-config.guess.patch
+	- 0010-Fix-parsering-short-unclosed-comment-uninitialized-access.patch
+	- 0011-Avoid-extra-processing-of-MarkupDecl-when-EOF.patch
+	- 0012-Avoid-processing-entities-after-encoding-conversion-.patch
+	- 0013-CVE-2015-7497-Avoid-an-heap-buffer-overflow-in-xmlDi.patch
+	- 0014-CVE-2015-5312-Another-entity-expansion-issue.patch
+	- 0015-Add-xmlHaltParser-to-stop-the-parser.patch
+	- 0016-Detect-incoherency-on-GROW.patch
+	- 0017-CVE-2015-7500-Fix-memory-access-error-due-to-incorre.patch
+	- 0018-CVE-2015-8242-Buffer-overead-with-HTML-parser-in-pus.patch
+	- 0019-Do-not-print-error-context-when-there-is-none.patch
+	- 0020-xmlStopParser-reset-errNo.patch
+	- 0021-Reuse-xmlHaltParser-where-it-makes-sense.patch
+
+Team Nokogiri will keep on doing their best to provide security
+updates in a timely manner, but if this is a concern for you and want
+to use the system library instead; abort this installation process and
+reinstall nokogiri as follows:
+
+    gem install nokogiri -- --use-system-libraries
+        [--with-xml2-config=/path/to/xml2-config]
+        [--with-xslt-config=/path/to/xslt-config]
+
+If you are using Bundler, tell it to use the option:
+
+    bundle config build.nokogiri --use-system-libraries
+    bundle install
+
+Note, however, that nokogiri is not fully compatible with arbitrary
+versions of libxml2 provided by OS/package vendors.
+************************************************************************
+Extracting libxml2-2.9.2.tar.gz into tmp/x86_64-apple-darwin15.2.0/ports/libxml2/2.9.2... OK
+Running git apply with /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/patches/libxml2/0001-Revert-Missing-initialization-for-the-catalog-module.patch... OK
+Running git apply with /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/patches/libxml2/0002-Fix-missing-entities-after-CVE-2014-3660-fix.patch... OK
+Running git apply with /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/patches/libxml2/0003-Stop-parsing-on-entities-boundaries-errors.patch... OK
+Running git apply with /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/patches/libxml2/0004-Cleanup-conditional-section-error-handling.patch... OK
+Running git apply with /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/patches/libxml2/0005-CVE-2015-1819-Enforce-the-reader-to-run-in-constant-.patch... OK
+Running git apply with /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/patches/libxml2/0006-Another-variation-of-overflow-in-Conditional-section.patch... OK
+Running git apply with /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/patches/libxml2/0007-Fix-an-error-in-previous-Conditional-section-patch.patch... OK
+Running git apply with /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/patches/libxml2/0008-CVE-2015-8035-Fix-XZ-compression-support-loop.patch... OK
+Running git apply with /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/patches/libxml2/0009-Updated-config.guess.patch... OK
+Running git apply with /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/patches/libxml2/0010-Fix-parsering-short-unclosed-comment-uninitialized-access.patch... OK
+Running git apply with /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/patches/libxml2/0011-Avoid-extra-processing-of-MarkupDecl-when-EOF.patch... OK
+Running git apply with /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/patches/libxml2/0012-Avoid-processing-entities-after-encoding-conversion-.patch... OK
+Running git apply with /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/patches/libxml2/0013-CVE-2015-7497-Avoid-an-heap-buffer-overflow-in-xmlDi.patch... OK
+Running git apply with /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/patches/libxml2/0014-CVE-2015-5312-Another-entity-expansion-issue.patch... OK
+Running git apply with /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/patches/libxml2/0015-Add-xmlHaltParser-to-stop-the-parser.patch... OK
+Running git apply with /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/patches/libxml2/0016-Detect-incoherency-on-GROW.patch... OK
+Running git apply with /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/patches/libxml2/0017-CVE-2015-7500-Fix-memory-access-error-due-to-incorre.patch... OK
+Running git apply with /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/patches/libxml2/0018-CVE-2015-8242-Buffer-overead-with-HTML-parser-in-pus.patch... OK
+Running git apply with /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/patches/libxml2/0019-Do-not-print-error-context-when-there-is-none.patch... OK
+Running git apply with /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/patches/libxml2/0020-xmlStopParser-reset-errNo.patch... OK
+Running git apply with /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/patches/libxml2/0021-Reuse-xmlHaltParser-where-it-makes-sense.patch... OK
+Running 'configure' for libxml2 2.9.2... OK
+Running 'compile' for libxml2 2.9.2... OK
+Running 'install' for libxml2 2.9.2... ERROR, review '/Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/ext/nokogiri/tmp/x86_64-apple-darwin15.2.0/ports/libxml2/2.9.2/install.log' to see what happened. Last lines are:
+========================================================================
+Making install in libxml
+make[4]: Nothing to be done for `install-exec-am'.
+ ../.././install-sh -c -d '/Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/ports/x86_64-apple-darwin15.2.0/libxml2/2.9.2/include/libxml2/libxml'
+ /usr/bin/install -c -m 644 SAX.h entities.h encoding.h parser.h parserInternals.h xmlerror.h HTMLparser.h HTMLtree.h debugXML.h tree.h list.h hash.h xpath.h xpathInternals.h xpointer.h xinclude.h xmlIO.h xmlmemory.h nanohttp.h nanoftp.h uri.h valid.h xlink.h xmlversion.h DOCBparser.h catalog.h threads.h globals.h c14n.h xmlautomata.h xmlregexp.h xmlmodule.h xmlschemas.h schemasInternals.h xmlschemastypes.h xmlstring.h xmlunicode.h xmlreader.h relaxng.h dict.h '/Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/ports/x86_64-apple-darwin15.2.0/libxml2/2.9.2/include/libxml2/libxml'
+ /usr/bin/install -c -m 644 SAX2.h xmlexports.h xmlwriter.h chvalid.h pattern.h xmlsave.h schematron.h '/Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/ports/x86_64-apple-darwin15.2.0/libxml2/2.9.2/include/libxml2/libxml'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+Making install in .
+ ./install-sh -c -d '/Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/ports/x86_64-apple-darwin15.2.0/libxml2/2.9.2/lib'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libxml2.la '/Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/ports/x86_64-apple-darwin15.2.0/libxml2/2.9.2/lib'
+libtool: install: /usr/bin/install -c .libs/libxml2.lai /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.6.7.2/ports/x86_64-apple-darwin15.2.0/libxml2/2.9.2/lib/libxml2.la
+usage: install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]
+               [-o owner] file1 file2
+       install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]
+               [-o owner] file1 ... fileN directory
+       install -d [-v] [-g group] [-m mode] [-o owner] directory ...
+make[3]: *** [install-libLTLIBRARIES] Error 64
+make[2]: *** [install-am] Error 2
+make[1]: *** [install-recursive] Error 1
+make: *** [install] Error 2
+========================================================================
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/Users/Shibl/.rbenv/versions/2.2.3/bin/$(RUBY_BASE_NAME)
+	--help
+	--clean
+	--use-system-libraries
+	--enable-static
+	--disable-static
+	--with-zlib-dir
+	--without-zlib-dir
+	--with-zlib-include
+	--without-zlib-include=${zlib-dir}/include
+	--with-zlib-lib
+	--without-zlib-lib=${zlib-dir}/lib
+	--enable-cross-build
+	--disable-cross-build
+/Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/mini_portile2-2.0.0/lib/mini_portile2/mini_portile.rb:366:in `block in execute': Failed to complete install task (RuntimeError)
+	from /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/mini_portile2-2.0.0/lib/mini_portile2/mini_portile.rb:337:in `chdir'
+	from /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/mini_portile2-2.0.0/lib/mini_portile2/mini_portile.rb:337:in `execute'
+	from /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/mini_portile2-2.0.0/lib/mini_portile2/mini_portile.rb:116:in `install'
+	from /Users/Shibl/Google Drive/Herguan University/2016 Spring/Software Enginering Concepts - CS532/Final Project/FriendTrends/vendor/bundle/ruby/2.2.0/gems/mini_portile2-2.0.0/lib/mini_portile2/mini_portile.rb:151:in `cook'
+	from extconf.rb:289:in `block (2 levels) in process_recipe'
+	from extconf.rb:182:in `block in chdir_for_build'
+	from extconf.rb:181:in `chdir'
+	from extconf.rb:181:in `chdir_for_build'
+	from extconf.rb:288:in `block in process_recipe'
+	from extconf.rb:187:in `tap'
+	from extconf.rb:187:in `process_recipe'
+	from extconf.rb:478:in `<main>'
+
+extconf failed, exit code 1
