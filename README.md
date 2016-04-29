@@ -1,6 +1,7 @@
 # Software Enginering Concepts
-## CS532 - Herguan Univeristy
-## Final Project - Spring 2016
+## CS532 - Herguan Univeristy || Final Project - Spring 2016
+
+[![Build Status](https://semaphoreci.com/api/v1/Shibl/cs532-project/branches/master/badge.svg)](https://semaphoreci.com/Shibl/cs532-project)
 
 ### Contributors
 - Mohamed Shibl (161001)
