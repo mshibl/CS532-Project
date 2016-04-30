@@ -90,7 +90,7 @@ module UsersHelper
       time = UsersHelper.convert_timestamps(record.created_at)
       @xData << time
       @followers_record << record.followers_count
-      @favorites << record.favorites_count
+      # @favorites << record.favorites_count
       # @retweets << record.retweet_count
       @data_changes[time] = {new_followers: new_followers, unfollowers: unfollowers}
     end
